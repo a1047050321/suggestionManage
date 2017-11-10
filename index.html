@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <title>意见反馈管理系统</title>
+    <link rel="stylesheet" type="text/css" href="css/base_suggestion.css" />
+    <link rel="stylesheet" type="text/css" href="css/comm_suggestion.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" href="plugins/tlayer/tlayer.css" />
+    <link rel="stylesheet" href="http://boss.homed.me/pubFile/plugins/kernel/homed.kernel.css" />
+    <link rel="stylesheet" href="http://boss.homed.me/pubFile/plugins/inav/inav.css" />
+    <style type="text/css">
+        #preivewFrame {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: none;
+            bottom: 0px;
+            z-index: 100;
+            height: 100%;
+            width: 100%;
+        }
+        
+        #popupWin,
+        #popupTips {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 104;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- 主窗体的内容部分 -->
+    <div class="ifrcontainer">
+        <iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="" frameborder="0" scrolling="no" style="background-color: #FFF;"></iframe>
+    </div>
+    <!-- 用于权限管理的内容弹出框 -->
+    <div id="popupWin">
+        <iframe id="popupFrame" name="popupFrame" src="" width="100%" height="100%" scrolling="no" frameborder="0" scrolling="no" style="float:left;"></iframe>
+    </div>
+    <!-- 用于权限管理的提示弹出框 -->
+    <div id="popupTips">
+        <iframe id="popupTipsFrame" name="popupTipsFrame" src="" width="100%" height="100%" scrolling="no" frameborder="0" scrolling="no" style="float:left;"></iframe>
+    </div>
+    <!--图片预览插件frmae-->
+    <iframe id="preivewFrame" name="preivewFrame" src="" frameborder="0" scrolling="no"></iframe>
+    <!--图片预览插件frmae-->
+    <!-- 底部copyright -->
+    <div id="footer" class="foot"></div>
+
+    <!-- 工作区初始化 开始 -->
+    <div id="workSpaceInit">
+        <div id="workSpaceLoading">
+            <div class="first">
+                <div>&nbsp;</div>
+            </div>
+            <div class="second">
+                <div>&nbsp;</div>
+            </div>
+            <div class="third">
+                <div>&nbsp;</div>
+            </div>
+        </div>
+        <p>正在初始化页面数据...</p>
+    </div>
+    <!-- 工作区初始化 结束 -->
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/commjs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/commjs/json2.js"></script>
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/commjs/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/commjs/dnsConfig.js"></script>
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/plugins/kernel/homed.kernel.js"></script>
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/plugins/inav/inav.js"></script>
+    <script type="text/javascript" src="http://boss.homed.me/pubFile/iconsys/syslist.js"></script>
+    <script type="text/javascript" src="js/apiConfig.js"></script>
+    <script type="text/javascript" src="js/comm_suggestion.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/longinValid.js"></script>
+    <script type="text/javascript" src="js/base_suggestion.js"></script>
+    <script type="text/javascript" src="plugins/tlayer/jquery.tlayer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript">
+        $(".currentYear").text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<title>意见回复</title>
+		<link rel="stylesheet" type="text/css" href="../css/base_suggestion.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/comm_suggestion.css"/>
+		<link rel="stylesheet" type="text/css" href="../plugins/pages/pages.css"/>
+		<link rel="stylesheet" type="text/css" href="css/suggesstion.css"/>
+	</head>
+	<body>
+		<div class="suggestionReplay clearfix">
+			<div class="tools toppart">
+				<a class="backBtn btnActive" href="javascript:void(0);"><span></span>返回</a>
+				<a class="confirmBtn saveBtn btnActive" href="javascript:void(0);"><span></span>保存</a>
+			</div>
+			<div class="mainContent">
+				<p class='replyer'>回复者:<span></span></p>
+				<p class='replyTime'>回复时间:<span></span></p>
+				<!--反馈时的输入框-->
+
+				<div class='replyContainer'>
+					<textarea class='replyInput textareaInput' placeholder="回复内容...按ctrl+enter发送"></textarea>
+				</div>
+				<!--反馈时的输入框-->
+
+				<div class='suggestionContainer'>
+					<div class="suggesstionArticle">
+						<div class="suggestionTitle">
+							<p class="username">用户：<span></span></p>
+            				<p class="time">发送时间：<span></span></p>
+						</div>
+            			<!--意见附件图片-->
+            			<div class="imageContainer">
+            				<div title="点击预览" class='picIcon'>附件: 图片<span class="picNum"></span>张</div>
+            			</div>
+            			<!--意见附件图片-->
+
+            			<!--意见正文-->
+            			<div class="article"></div>
+            			<!--意见正文-->
+
+            		</div>
+				</div>
+			</div>
+			<div class="toolsBottom">
+				<span class="btn save btnFocus">发送</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/suggestionUtil.js"></script>
+	<script type="text/javascript" src="js/suggestionReplay.js"></script>
+</html>

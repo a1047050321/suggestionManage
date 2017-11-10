@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>意见列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/base_suggestion.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/comm_suggestion.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/pages/pages.css"/>
+    <link rel="stylesheet" type="text/css" href="css/suggesstion.css"/>
+</head>
+<body>
+    <div class="suggestionList clearfix">
+        <div class="tools toppart">
+            <a class="updateBtn" href="javascript:void(0);"><span></span>回复</a>
+            <a class="delBtn" href="javascript:void(0);"><span></span>删除</a>
+            <a class="importBtn btnActive" ><span></span>导出excel表格</a>
+        </div>
+        <div class="mainContent">
+
+        	<!--右侧的意见栏-->
+            <div class='slideBar closeBar'>
+
+				<!--收起和展开按钮-->
+            	<div class="bar"></div>
+				<!--收起和展开按钮-->
+
+				<!--意见区域-->
+            	<div class="suggestionContent">
+
+                    <div class="replyBar">
+                        <textarea class="textareaInput" placeholder="快速回复...按ctrl+enter发送"></textarea>
+                        <span class="btn save">发送</span>
+                    </div>
+                    <!--用于显示用户，时间及工具条-->
+                    <div class="suggesstionTool">
+                        <div class="tools">
+                            <a class="username" href="javascript:void(0);"></a>
+                            <a class="time" href="javascript:void(0);"></a>
+                            <a class="delBtn btnActive" style="float:right;" href="javascript:void(0);"><span></span>删除</a>
+                            <a class="updateBtn btnActive" style="float:right;" href="javascript:void(0);"><span></span>回复</a>
+                        </div>
+                    </div>
+                    <!--用于显示用户，时间及工具条-->
+
+                    <div class="suggesstionArticle">
+            		    <a class='replyQuickly' title="快速回复"></a>
+            			
+            			<!--意见附件图片-->
+            			<div class="imageContainer">
+                            <div title="点击预览" class='picIcon'>附件: 图片<span class="picNum"></span>张</div>
+                        </div>
+            			<!--意见附件图片-->
+
+            			<!--意见正文-->
+            			<div class="article">
+            			</div>
+            			<!--意见正文-->
+
+            		</div>
+            	</div>
+            	<!--意见区域-->
+
+            </div>
+			<!--右侧的意见栏-->
+
+            <div class="conconent">
+                <div class="listtitle">
+                </div>
+                <div class="list tableList">
+                </div>
+            </div>
+        </div>
+        <div class="pages">
+            <div class="pageBar"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+    <script type="text/javascript" src="../plugins/pages/pages.js"></script>
+    <script type="text/javascript" src="js/suggestionUtil.js"></script>
+    <script type="text/javascript" src="../plugins/exportFile/jquery.base64.js"></script>
+    <script type="text/javascript" src="../plugins/exportFile/tableExport.js"></script>
+    <script type="text/javascript" src="js/suggestionList.js"></script>
+</body>
+</html>

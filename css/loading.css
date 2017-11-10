@@ -1,0 +1,41 @@
+/*<!-- 工作区初始化 开始 -->
+
+<div id="workSpaceInit">
+    <div id="workSpaceLoading">
+        <div class="first"><div>&nbsp;</div></div>
+        <div class="second"><div>&nbsp;</div></div>
+        <div class="third"><div>&nbsp;</div></div>
+    </div>
+    <p>正在初始化工作区...</p>
+</div>
+<!-- 工作区初始化 结束 -->*/
+
+@charset "utf-8";
+
+/* 工作区初始化中 开始 */
+#workSpaceInit {position: absolute; width: 100%; text-align: center; height: 30px; line-height: 30px; font-size: 18px; top: 50%; margin-top: -15px; color: #000; font-weight: bold; font-family:"Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif; }
+#workSpaceLoading div {display: inline-block; *display: inline; *zoom: 1; width: 30px; height: 30px; border-radius: 15px; text-align: center; vertical-align: middle; font-size: 0px }
+#workSpaceLoading div div {font-size: 0px; background: #FF9B1B; vertical-align: middle; margin-top:0px; width: 20px; height: 20px; border-radius: 10px; }
+#workSpaceLoading div div {
+    -webkit-animation: loading .5s ease-in infinite;
+       -moz-animation: loading .5s ease-in infinite;
+        -ms-animation: loading .5s ease-in infinite;
+         -o-animation: loading .5s ease-in infinite;
+            animation: loading .5s ease-in infinite;
+}
+
+@keyframes loading {
+    50% {opacity: .3; alpha: filter(opacity=30); }
+    80% {opacity: 1; alpha: filter(opacity=100); }
+}
+
+@-webkit-keyframes loading {
+    50% {opacity: .3; alpha: filter(opacity=30); }
+    80% {opacity: 1; alpha: filter(opacity=100); }
+}
+
+@-moz-keyframes loading {
+    50% {opacity: .3;alpha: filter(opacity=30);}
+    80% {opacity: 1; alpha: filter(opacity=100); }
+}
+/* 工作区初始化中 结束 */

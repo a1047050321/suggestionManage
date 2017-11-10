@@ -1,0 +1,68 @@
+.list.tableList ul[status="1"]{color:black; }
+.list.tableList ul[status="1"] li:nth-child(11):after{content: ''; display: inline-block; width: 13px; height: 13px; background-image: url(../../img/dealStatus.png); background-position: 0 -19px; background-repeat: no-repeat; margin-left: 5px; }
+.list.tableList ul[status="3"]{color:#C1C1C1; }
+
+.suggestionList .mainContent .conconent{position: relative; overflow: hidden; }
+ 
+/* ----------------展开右侧的意见栏------------------begin */
+.suggestionList .mainContent .slideBar{float: right; height: 100%; width: 30%; position: relative; background-color: #F0F0F0; border-left: 1px solid #ccc; transition: width ease 0.5s; }
+
+.suggestionList .mainContent .slideBar.closeBar{width: 19px; }
+.suggestionList .mainContent .slideBar .bar:after{position: absolute; color: black; font-size: 14px; margin: 6px 0 0 1px; content: "\25B6"; }
+.suggestionList .mainContent .slideBar.closeBar .bar:after{content: "\25C0"; }
+.suggestionList .mainContent .slideBar .bar{position: absolute; height: 35px; width: 13px; left: -1px; top:50%; margin-top: -8px; border:1px solid #ccc; }
+
+.suggestionList .mainContent .slideBar .suggestionContent{background-color: white;position: absolute;left: 14px;top:15px;right: 0;bottom: 0px;overflow: auto;border:1px solid #dcdcdc;border-bottom: none;padding:15px;}
+.suggestionList .mainContent .slideBar.closeBar .suggestionContent{display: none;}
+.suggestionList .mainContent .suggesstionArticle{position: relative;}
+
+.suggestionList .suggesstionTool .tools{padding-left: 0px;display: block;}
+.suggestionList .suggesstionTool .tools .username{  margin-right: 20px;}
+.imageContainer{ height: 25px;}
+.article{ line-height: 30px;text-indent: 2em;font-size: 14px;padding-top: 20px;word-wrap: break-word; word-break: break-word;}
+
+/*快速回复*/
+a.replyQuickly {position: absolute;top:0px;right: 0px;cursor:pointer;height: 15px;width: 25px;background: #F1F3F4;border: 1px solid #dcdcdc;text-align: center;}
+a.replyQuickly:after{content: '\25bc';display: inline-block;height: 100%;width: 100%;z-index:2;position: absolute;left:0;color: #728BA3;}
+
+/* 快速回复区 */
+.replyBar{display: none; height: 0;}
+.replyBar.openBar{display: block;height: 105px;padding-bottom: 10px;}
+.replyBar textarea{transition: all ease 0.5s;width: calc(100% - 20px);height: calc(100% - 35px); margin-top: 0px; margin-bottom: 0px; padding: 5px;resize: none; }
+
+.replyContent{border-top: #DCDCDC 1px solid; margin-top: 20px; }
+
+/* ----------------展开右侧的意见栏------------------begin */
+
+/* ----------------意见回复--------------------------begin */
+.suggestionReplay .mainContent{bottom: 38px;  overflow: auto;font-size: 14px;}
+.suggestionReplay .tools{display: block;}
+.suggestionReplay .toolsBottom{position: absolute; left: 0; right: 0; bottom: 0; height: 38px; }
+.suggestionReplay .toolsBottom .save{margin: 4px 0 4px 10px;}
+
+.suggestionReplay .suggestionContainer{padding: 10px 40px 40px 10px;margin-top: 20px;}
+
+.suggestionReplay .suggestionTitle{padding: 10px 0px;background-color:#FAFAFA;}
+.suggestionReplay .suggestionTitle p{color: black;font-weight: bold;height: 30px;line-height: 30px;text-indent: 10px;}
+.suggestionReplay .suggestionTitle p span{font-weight: normal;}
+
+.suggestionReplay .replyContainer{margin: 10px 45px 10px 10px;position: relative;}
+.suggestionReplay .replyContainer textarea{width: 100%;height: 100%;height: 90px;padding: 5px 0 5px 5px;resize: none;resize: vertical; line-height: 25px;background: url(../../images/border-bg.png) repeat-x;} 
+.suggestionReplay .replyer,
+.suggestionReplay .replyTime{  border-bottom: #DCDCDC 1px solid;  text-indent: 10px;height: 30px;line-height: 30px;background-color: #FAFAFA;color:black;font-weight: bold;}
+.suggestionReplay .replyer span,
+.suggestionReplay .replyTime span{font-weight: normal;}
+/* ----------------意见回复--------------------------end */
+
+.containerTitle{font-size: 14px; font-weight: bold; height: 30px; line-height: 30px; background-color: #DCDCDC;}
+
+
+/* ----------------草稿箱---------------------------begin */
+.draftList .mainContent{bottom: 0;border: none;}
+.draftList .mainContent .list.tableList ul[status="1"] li:nth-child(5):after{content: '';display: none;}
+/* ----------------草稿箱---------------------------end */
+
+/* ----------------反馈中带有图片-------------------begin */
+.imageContainer{padding: 5px 0;}
+.imageContainer .picIcon{  color: #555;cursor:pointer;display: inline-block; font-size: 14px; height: 19px; line-height: 18px; padding: 2px; min-width: 150px; border: 1px solid #99A89E; background-color: #D5E7FB; border-radius: 2px; }
+/* ----------------反馈中带有图片-------------------end */

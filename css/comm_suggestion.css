@@ -1,0 +1,1346 @@
+@charset "utf-8";
+body,
+html {
+    font-family: "宋体";
+}
+
+
+/*------------位置样式-----------------------------------begin*/
+
+.currpbg {
+    position: relative;
+    width: 100%;
+    height: 26px;
+    background-color: #3e6c99;
+}
+
+.curr {
+    margin: auto;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #9fbbd7;
+}
+
+.currIcon,
+.currInfo {
+    float: left;
+}
+
+.currIcon {
+    background: url(../img/icon.png) -92px -50px no-repeat;
+    width: 8px;
+    height: 10px;
+}
+
+.currInfo {
+    margin-left: 5px;
+}
+
+.currOprea {
+    float: right;
+    background: url(../img/icon.png) -89px -31px no-repeat;
+    width: 11px;
+    height: 6px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+
+/*------------位置样式-----------------------------------end*/
+
+
+/* ----------工具栏--------------------------------------begin */
+
+.tools {
+    height: 34px;
+    border-bottom: #dcdcdc 1px solid;
+    vertical-align: middle;
+    padding-left: 10px;
+    display: none;
+}
+
+.tools a {
+    color: #969696;
+    font-size: 12px;
+    display: block;
+    float: left;
+    height: 34px;
+    min-width: 53px;
+    line-height: 34px;
+    padding-right: 3px;
+}
+
+.resetPwdBtn span,
+.editPwdBtn span,
+.openBtn span,
+.detailBtn span,
+.exportBtn span,
+.closeBtn span,
+.addBtn span,
+.upgradeBtn span,
+.updateBtn span,
+.unlockBtn span,
+.lockBtn span,
+.single_rechargeBtn span,
+.batch_rechargeBtn span,
+.associateBtn span,
+.confirmBtn span,
+.receiveBtn span,
+.returnBtn span,
+.reportBtn span,
+.cancelReportBtn span,
+.invalidateBtn span,
+.renewBtn span,
+.paymoneyBtn span,
+.backBtn span,
+.changeBtn span,
+.activeBtn span,
+.calculateBtn span,
+.bindCardBtn span,
+.unbindBtn span,
+.presentBtn span,
+.applyBtn span,
+.importBtn span,
+.deleteToRecycleBtn span,
+.reSendBtn span,
+.delBtn span {
+    margin-left: 6px;
+    background-image: url(../img/toolsBar.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 16px;
+    margin-top: 9px;
+    margin-right: 1px;
+    display: block;
+    float: left;
+}
+
+.batch_rechargeBtn span {
+    margin-right: 3px;
+}
+
+.backBtn.btnActive span {
+    background: url('../img/back_icon.png') no-repeat 0 0;
+    width: 16px;
+    display: inline-block;
+    height: 16px;
+    margin-top: 9px;
+}
+
+.backBtn.btnActive:hover span {
+    background-position-y: -90px;
+}
+
+
+/*不可激活状态---------------------------------------------------*/
+
+.unlockBtn span {
+    background-position: -20px -40px;
+}
+
+.addBtn span {
+    background-position: 0 -40px;
+}
+
+.delBtn span {
+    background-position: -40px -40px;
+    margin-top: 11px;
+}
+
+.deleteToRecycleBtn span {
+    background-position: -40px -40px;
+    margin-top: 11px;
+}
+
+.upgradeBtn span {
+    background-position: -60px -40px;
+    margin-top: 10px;
+}
+
+.updateBtn span {
+    background-position: -80px -40px;
+    margin-top: 10px;
+}
+
+.exportBtn span {
+    background-position: -100px -40px;
+    margin-top: 11px;
+}
+
+.renewBtn span {
+    background-position: -120px -40px;
+}
+
+.lockBtn span {
+    background-position: -159px -40px;
+}
+
+.detailBtn span {
+    background-position: -180px -40px;
+}
+
+.openBtn span {
+    background-position: -240px -40px;
+    margin-top: 10px;
+}
+
+.closeBtn span {
+    background-position: -260px -40px;
+    margin-top: 10px;
+}
+
+.editPwdBtn span {
+    background-position: -280px -40px;
+}
+
+.resetPwdBtn span {
+    background-position: -300px -40px;
+}
+
+.single_rechargeBtn span {
+    background-position: -320px -40px;
+}
+
+.batch_rechargeBtn span {
+    background-position: -340px -40px;
+}
+
+.associateBtn span {
+    background-position: -360px -40px;
+}
+
+.confirmBtn span {
+    background-position: -380px -40px;
+}
+
+.receiveBtn span {
+    background-position: -400px -40px;
+}
+
+.reSendBtn span {
+    background-position: -400px -40px;
+}
+
+.returnBtn span {
+    background-position: -420px -40px;
+}
+
+.cancelReportBtn span {
+    background-position: -440px -40px;
+}
+
+.reportBtn span {
+    background-position: -460px -40px;
+}
+
+.changeBtn span {
+    background-position: -480px -40px;
+}
+
+.activeBtn span {
+    background-position: -500px -40px;
+}
+
+.invalidateBtn span {
+    background-position: -520px -40px;
+}
+
+.calculateBtn span {
+    background-position: -540px -40px;
+}
+
+.bindCardBtn span {
+    background-position: -560px -40px;
+}
+
+.unbindBtn span {
+    background-position: -580px -40px;
+}
+
+.presentBtn span {
+    background-position: -600px -40px;
+}
+
+.applyBtn span {
+    background-position: -620px -40px;
+}
+
+.importBtn span {
+    background-position: -640px -40px;
+}
+
+.paymoneyBtn span {
+    background-position: -660px -40px;
+}
+
+
+/*正常状态-----------------------------------------------------*/
+
+.btnActive.addBtn span {
+    background-position: 0 1px;
+}
+
+.btnActive.unlockBtn span {
+    background-position: -20px 0px;
+}
+
+.btnActive.delBtn span {
+    background-position: -40px 0px;
+}
+
+.btnActive.deleteToRecycleBtn span {
+    background-position: -40px 0;
+}
+
+.btnActive.upgradeBtn span {
+    background-position: -60px 0px;
+}
+
+.btnActive.updateBtn span {
+    background-position: -80px 0px;
+}
+
+.btnActive.exportBtn span {
+    background-position: -100px 0px;
+}
+
+.btnActive.renewBtn span {
+    background-position: -120px 0px;
+}
+
+.btnActive.lockBtn span {
+    background-position: -159px 0px;
+}
+
+.btnActive.detailBtn span {
+    background-position: -180px 0px;
+}
+
+.btnActive.openBtn span {
+    background-position: -240px -1px;
+}
+
+.btnActive.closeBtn span {
+    background-position: -260px 0px;
+}
+
+.btnActive.editPwdBtn span {
+    background-position: -280px 0px;
+}
+
+.btnActive.resetPwdBtn span {
+    background-position: -300px 0px;
+}
+
+.btnActive.single_rechargeBtn span {
+    background-position: -320px 0;
+}
+
+.btnActive.batch_rechargeBtn span {
+    background-position: -340px 0;
+}
+
+.btnActive.associateBtn span {
+    background-position: -360px 0;
+}
+
+.btnActive.confirmBtn span {
+    background-position: -380px 0;
+}
+
+.btnActive.receiveBtn span {
+    background-position: -400px 0;
+}
+
+.btnActive.reSendBtn span {
+    background-position: -400px 0;
+}
+
+.btnActive.returnBtn span {
+    background-position: -420px 0;
+}
+
+.btnActive.cancelReportBtn span {
+    background-position: -440px 0;
+}
+
+.btnActive.reportBtn span {
+    background-position: -460px 0;
+}
+
+.btnActive.changeBtn span {
+    background-position: -480px 0;
+}
+
+.btnActive.activeBtn span {
+    background-position: -500px 0;
+}
+
+.btnActive.invalidateBtn span {
+    background-position: -520px 0;
+}
+
+.btnActive.calculateBtn span {
+    background-position: -540px 0;
+}
+
+.btnActive.bindCardBtn span {
+    background-position: -560px 0;
+}
+
+.btnActive.unbindBtn span {
+    background-position: -580px 0;
+}
+
+.btnActive.presentBtn span {
+    background-position: -600px 0;
+}
+
+.btnActive.applyBtn span {
+    background-position: -620px 0;
+}
+
+.btnActive.importBtn span {
+    background-position: -640px 0;
+}
+
+.btnActive.paymoneyBtn span {
+    background-position: -660px 0;
+}
+
+
+/*hover状态-----------------------------------------------------*/
+
+.btnActive.addBtn:hover span {
+    background-position: 0 -20px;
+}
+
+.btnActive.unlockBtn:hover span {
+    background-position: -20px -20px;
+}
+
+.btnActive.delBtn:hover span {
+    background-position: -40px -20px;
+}
+
+.btnActive.upgradeBtn:hover span {
+    background-position: -60px -20px;
+}
+
+.btnActive.updateBtn:hover span {
+    background-position: -80px -20px;
+}
+
+.btnActive.exportBtn:hover span {
+    background-position: -100px -20px;
+}
+
+.btnActive.renewBtn:hover span {
+    background-position: -120px -20px;
+}
+
+.btnActive.lockBtn:hover span {
+    background-position: -159px -20px;
+}
+
+.btnActive.detailBtn:hover span {
+    background-position: -180px -20px;
+}
+
+.btnActive.openBtn:hover span {
+    background-position: -240px -20px;
+}
+
+.btnActive.closeBtn:hover span {
+    background-position: -260px -20px;
+}
+
+.btnActive.editPwdBtn:hover span {
+    background-position: -280px -20px;
+}
+
+.btnActive.resetPwdBtn:hover span {
+    background-position: -300px -20px;
+}
+
+.btnActive.single_rechargeBtn:hover span {
+    background-position: -320px -20px;
+}
+
+.btnActive.batch_rechargeBtn:hover span {
+    background-position: -340px -20px;
+}
+
+.btnActive.associateBtn:hover span {
+    background-position: -360px -20px;
+}
+
+.btnActive.confirmBtn:hover span {
+    background-position: -380px -20px;
+}
+
+.btnActive.receiveBtn:hover span {
+    background-position: -400px -20px;
+}
+
+.btnActive.reSendBtn:hover span {
+    background-position: -400px -20px;
+}
+
+.btnActive.returnBtn:hover span {
+    background-position: -420px -20px;
+}
+
+.btnActive.cancelReportBtn:hover span {
+    background-position: -440px -20px;
+}
+
+.btnActive.reportBtn:hover span {
+    background-position: -460px -20px;
+}
+
+.btnActive.changeBtn:hover span {
+    background-position: -480px -20px;
+}
+
+.btnActive.invalidateBtn:hover span {
+    background-position: -520px -20px;
+}
+
+.btnActive.activeBtn:hover span {
+    background-position: -500px -20px;
+}
+
+.btnActive.calculateBtn:hover span {
+    background-position: -540px -20px;
+}
+
+.btnActive.bindCardBtn:hover span {
+    background-position: -560px -20px;
+}
+
+.btnActive.unbindBtn:hover span {
+    background-position: -580px -20px;
+}
+
+.btnActive.presentBtn:hover span {
+    background-position: -600px -20px;
+}
+
+.btnActive.applyBtn:hover span {
+    background-position: -620px -20px;
+}
+
+.btnActive.importBtn:hover span {
+    background-position: -640px -20px;
+}
+
+.btnActive.deleteToRecycleBtn:hover span {
+    background-position: -680px -20px;
+}
+
+.btnActive.paymoneyBtn:hover span {
+    background-position: -660px -20px;
+}
+
+.tools a.btnActive {
+    color: black;
+}
+
+.tools a.btnActive:hover {
+    background-color: #008FD0;
+    color: white;
+}
+
+.tools a.btnActive.delBtn:hover {
+    background-color: #c80000;
+    color: white;
+}
+
+.tools a.btnActive:active {
+    background-color: #2f6fac;
+    color: white;
+}
+
+.tools a.btnActive.delBtn:active {
+    background-color: #c80000;
+    color: white;
+}
+
+
+/* ----------工具栏---------------------------------------begin */
+
+
+/*---------------二级ifranme的样式------------------------begin*/
+
+.container {
+    position: absolute;
+    width: 100%;
+    top: 26px;
+    bottom: 0px;
+}
+
+
+/*---------------二级ifranme的样式------------------------end*/
+
+.ltree {
+    font-size: 14px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
+    width: 16.62%;
+    min-width: 150px;
+    height: 100%;
+    border-right: #dcdcdc solid 1px;
+    overflow: auto;
+    background-color: #f0f0f0;
+}
+
+.rcontent {
+    position: absolute;
+    margin: 0 0 0 0px;
+    height: 100%;
+    float: right;
+    left: 16.62%;
+    margin-left: 1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#cover {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 101;
+    display: none;
+}
+
+
+/* --------------多文本输入框-----------------------------begin*/
+
+textarea.textareaInput {
+    margin-top: 10px;
+    outline: 1px solid #b0b0b0;
+    outline-offset: 0px;
+    border: none;
+    resize: horizontal;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+textarea.textareaInput:focus {
+    outline: 1px solid #1780fb;
+    border: none;
+}
+
+
+/* --------------多文本输入框-----------------------------end*/
+
+
+/* --------------重写checkbox-----------------------------begin */
+
+input[type=checkbox] {
+    -webkit-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 0px;
+    width: 0px;
+    font-size: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+input[type=checkbox]+label {
+    display: inline-block;
+    height: 16px;
+    position: relative;
+}
+
+input[type=checkbox]+label:before {
+    content: '';
+    display: inline-block;
+    background: url('../img/inputicon.png') no-repeat 0 0;
+    height: 14px;
+    width: 14px;
+    outline: none;
+    border: none;
+    margin-right: 4px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+input:checked+label:before {
+    content: '';
+    display: inline-block;
+    background: url('../img/inputicon.png') no-repeat 0 -15px;
+    height: 14px;
+    width: 14px;
+    outline: none;
+    border: none;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+input[type=checkbox]+label.selectInput:before {
+    content: '';
+    display: inline-block;
+    background: url('../img/inputicon.png') no-repeat 0 -15px;
+    height: 14px;
+    width: 14px;
+    outline: none;
+    border: none;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+
+/* --------------重写checkbox-----------------------------end */
+
+
+/* 包含分页插件的div */
+
+.pages {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*-页面分为pages，toolsbar和mainContent时，maincontet的样式--begin*/
+
+.mainContent {
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.mainContent .conconent {
+    height: 100%;
+    position: relative;
+}
+
+.mainContent .conconent .tableList {
+    position: absolute;
+    bottom: 0;
+    top: 29px;
+}
+
+
+/*-页面分为pages，toolsbar和mainContent时，mainconte的样式--end*/
+
+
+/*-----------------表格样式-------------------------------begin*/
+
+div.tableList ul:hover,
+.ulHover {
+    background: #f0faff;
+}
+
+.ulFocus {
+    transition: background-color ease 0.3s;
+}
+
+.ulFocus,
+div.tableList ul.ulFocus:hover {
+    background: #A6CEF2;
+}
+
+
+/*div.tableList{-webkit-touch-callout: text; -webkit-user-select: text; -khtml-user-select: text; -moz-user-select: text; -ms-user-select: text; user-select: text; }*/
+
+div.listtitle {
+    position: relative;
+    width: 100%;
+    background: #fafafa;
+    font-size: 12px;
+    color: #646464;
+}
+
+div.tableList {
+    width: 100%;
+    font-size: 12px;
+    color: #221815;
+    overflow: auto;
+}
+
+div.listtitle,
+div.tableList ul {
+    border-bottom: #f0f0f0 solid 1px;
+}
+
+div.listtitle li,
+div.tableList li {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+
+div.tableList li {
+    margin-left: -3px;
+    padding-left: 3px;
+}
+
+div.listtitle>ul>li:first-child label,
+div.tableList>ul>li:first-child label {
+    margin-left: 10px;
+}
+
+.tableList a {
+    height: 29px;
+    width: 30px;
+    text-align: center;
+    line-height: 29px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.tableList a.btnActive:hover {
+    background-color: #008FD0;
+    cursor: pointer;
+}
+
+.tableList a.btnActive:active {
+    background-color: #2f6fac;
+}
+
+.tableList a>span {
+    vertical-align: middle;
+    float: none;
+    margin: 0 auto;
+    display: inline-block;
+    background-image: url(../img/toolsBar.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.tableList a.unbindBtn>span {
+    width: 17px;
+}
+
+.tableList a.btnActive.delBtn:hover,
+.tableList a.btnActive.delBtn:active {
+    background: #c80000;
+}
+
+.tableList a.unlockBtn>span {
+    margin-left: -4px;
+}
+
+.tableList.nodata {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+}
+
+div.listtitle li {
+    height: auto;
+    min-height: 28px;
+}
+
+
+/*-----------------表格样式------------------------------end*/
+
+
+/*--------------隐藏和显示表头,以及下拉筛选框样式--------begin*/
+
+.selecTh {
+    font-size: 12px;
+    font-family: '宋体';
+    border: #969696 solid 1px;
+    position: absolute;
+    z-index: 20;
+    max-height: 250px;
+    min-width: 120px;
+    overflow: auto;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.selecTh ul {
+    height: auto;
+    background-color: #FFF;
+}
+
+.selecTh ul li {
+    text-indent: 2px;
+    clear: both;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+
+.selecTh ul li label,
+.selecTh ul li label {
+    cursor: pointer;
+}
+
+.selecTh ul li label {
+    height: 25px;
+    float: left;
+    text-indent: 4px;
+    margin-right: 5px;
+    white-space: pre;
+    width: 100%;
+}
+
+.selecTh ul li:last-child {
+    border: none;
+}
+
+.selecTh-hover,
+.selecTh:hover {
+    background-position: 0px 0px;
+}
+
+.selecTh-active:hover {
+    background-position: 0px -60px;
+}
+
+.selecTh-active {
+    background-position: 0px -60px;
+}
+
+.selecTh ul li:hover {
+    background: #CBE3EF;
+}
+
+
+/*--------------隐藏和显示表头--------------------------end*/
+
+
+/*---------表格中的筛选小三角样式-----------------------begin*/
+
+.selectable {
+    color: inherit;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-left: 1px;
+    text-align: left;
+    padding-right: 12px;
+    min-height: 27px;
+    padding-left: 0px;
+    margin-top: 1px;
+}
+
+.selectable:hover {
+    outline: 1px solid #c3d8f0;
+    outline-offset: 0px;
+    background: #f3f9fe;
+}
+
+.selectable:after {
+    background: #f3f9fe;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../img/dropdown.png') no-repeat 0px 0px;
+    width: 7px;
+    height: 6px;
+    margin-top: 11px;
+    left: 100%;
+    margin-left: -10px;
+    top: 0;
+}
+
+.selectable.active {
+    outline: 1px solid #008FD0;
+    outline-offset: 0px;
+    background: #f3f9fe;
+}
+
+.selectable.active:after {
+    background-position: 0 -16px;
+    margin-top: 9px;
+}
+
+div.listtitle li.selectableTh {
+    position: relative;
+    overflow: visible;
+    text-indent: 0px;
+    margin-left: -3px;
+    padding-left: 3px;
+}
+
+div.listtitle li.selectableTh .selectable {
+    margin-left: -2px;
+    padding-left: 3px;
+    /* white-space: pre; */
+}
+
+.selectable+.selectOption {
+    min-width: 90px;
+    display: none;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-left: 0px;
+}
+
+.selectable.active+.selectOption {
+    display: inline-block;
+}
+
+
+/*---------表格中的筛选小三角样式------------------------end*/
+
+
+/*---------表格中的排序箭头样式--------------------------begin*/
+
+div.listtitle li.sortableTh {
+    margin-left: -2px;
+    padding-left: 2px;
+}
+
+.sortable {
+    margin-bottom: 1px;
+    color: inherit;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-left: 0px;
+    padding-left: 1px;
+    text-align: left;
+    padding-right: 11px;
+    min-height: 27px;
+    margin-top: 1px;
+    margin-right: 1px;
+    top: 0;
+    right: 0;
+}
+
+.sortable:hover {
+    outline: 1px solid #c3d8f0;
+    outline-offset: 0px;
+    background: #f3f9fe;
+}
+
+.sortable:active {
+    outline: 1px solid #008FD0;
+    outline-offset: 0px;
+    background: #f3f9fe;
+}
+
+.sortable:hover:after,
+.sortable:active:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    background: url('../img/sortable.png') no-repeat;
+    background-position: 0px 0px;
+    margin-left: 2px;
+    margin-top: 9px;
+    top: 0;
+    right: 0;
+}
+
+.sortable.down:hover:after,
+.sortable.down:active:after {
+    background-position: 0px -28px;
+}
+
+
+/*---------表格中的排序箭头样式--------------------------end*/
+
+
+/*--------文件长度超出时显示为...------------------------begin*/
+
+.nameEllipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*--------文件长度超出时显示为...------------------------end*/
+
+
+/* ----------------普通按钮-------------------------------begin */
+
+.btn {
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-weight: bold;
+    color: #505050;
+    text-align: center;
+}
+
+.btn:hover,
+.btnFocus {
+    color: white;
+    background-color: #008fd0!important;
+}
+
+.btn:active {
+    background-color: #2f6fac!important;
+    color: white;
+}
+
+.btnDisable {
+    color: #c8c8c8;
+}
+
+
+/* ----------------普通按钮-------------------------------end */
+
+
+/*-----------------title样式------------------------------begin*/
+
+span.postitle {
+    cursor: pointer;
+}
+
+span.postitle:before {
+    content: '';
+    display: inline-block;
+    background: url(../img/arrow.png) no-repeat;
+    width: 7px;
+    height: 7px;
+    margin: 1px;
+}
+
+span.postitle.closeCon:before {
+    background-position: 0 -2px;
+}
+
+span.postitle.openCon:before {
+    background-position: 0 -13px;
+}
+
+p.titleStyle {
+    font-family: "宋体";
+    height: 35px;
+    line-height: 35px;
+    clear: both;
+    font-size: 14px;
+    color: #505050;
+    font-weight: bold;
+}
+
+p.titleStyle>span {
+    z-index: 5;
+    position: relative;
+    background: #FFFFFF;
+    padding-right: 5px;
+}
+
+p.titleStyle:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #DCDCDC;
+    position: relative;
+    top: -20px;
+}
+
+
+/*----------------title样式-------------------------------end*/
+
+
+/*--------------------页面上的提示--------------------------begin*/
+
+.submitTips {
+    float: right;
+    margin-right: 40px;
+    vertical-align: middle;
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    color: #808080;
+}
+
+.submitTips:before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    background-position: center center;
+    background-size: contain;
+    height: 12px;
+    margin-right: 3px;
+    vertical-align: middle;
+    background-image: url("../img/icon_tips.png");
+    margin-top: -3px;
+}
+
+
+/*--------------------页面上的提示---------------------------end*/
+
+
+/* -------------------输入框不可编辑-------------------------begin */
+
+.disableEdit {
+    background: #f9f9f9;
+}
+
+
+/* -------------------输入框不可编辑-------------------------end */
+
+
+/* ------------------加载表格数据时的过度效果-----begin*/
+
+.tableList.loadData {
+    background: url(../img/ajax-loader.gif) no-repeat 50% 50%;
+    height: 60px;
+}
+
+.tableList .nodatatips {
+    background-color: #dcdcdc;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px auto;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+
+/*-------------------记载表格数据时的过度效果-----end*/
+
+
+/*提醒用户是否需要审核=-------------begin*/
+
+.reviewMessage {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    width: 60%;
+    left: 20%;
+    height: 60px;
+}
+
+.reviewMessage a {
+    display: inline;
+    color: orange;
+}
+
+
+/*提醒用户是否需要审核=-------------end*/
+
+
+/*---------------使用icon_font---------begin*/
+
+@font-face {
+    font-family: icons;
+    src: url('../icons/icons.ttf');
+}
+
+.icons {
+    font-family: icons;
+    font-size: 60px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    background: #D1944F;
+}
+
+
+/*---------------使用icon_font---------end*/
+
+
+/*-----------冒泡提示框----------------begin*/
+
+.poptis {
+    background-color: #e8e8e8;
+    border: #e8e8e8 1px solid;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    z-index: 5;
+    padding: 5px;
+    line-height: 26px;
+    width: 131px;
+    position: absolute;
+    left: 0px;
+    font-size: 14px;
+    top: 0px;
+    min-height: 111px;
+    box-shadow: 2px 2px 2px 2px #c2c2c2;
+    color: #525252;
+}
+
+
+/*-----------冒泡提示框----------------end*/
+
+
+/* 某些icon字符的频道，没有返回icon，则使用图片，这个时候需设置背景色，对于本身是图片的节目，添加背景色无影响 */
+
+.poster {
+    width: 150px;
+    height: 100px;
+    background-color: #D1944F;
+}
+
+#treeList ul {
+    width: 100%;
+}
+
+#treeList ul li:hover {
+    background-color: #DDDDDD;
+    color: black;
+}
+
+#treeList ul li a {
+    color: black;
+    display: inline-block;
+    width: 100%;
+}
+
+#treeList ul li {
+    padding-left: 40px;
+    border-bottom: #cccccc 1px solid;
+    height: 34px;
+    line-height: 34px;
+}
+
+#treeList ul li:last-child {
+    border: none;
+}
+
+#treeList ul li.secondMenuFocus:hover,
+.secondMenuFocus {
+    background-color: #cbe3ef;
+    color: black;
+    font-weight: bolder;
+}
+
+#treeList .countTips {
+    color: red;
+    font-weight: normal;
+    margin-left: 5px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>意见列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/base_suggestion.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/comm_suggestion.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/pages/pages.css"/>
+    <link rel="stylesheet" type="text/css" href="css/suggesstion.css"/>
+</head>
+<body>
+    <div class="suggestionList clearfix replayList">
+        <div class="tools toppart">
+            <a class="delBtn" href="javascript:void(0);"><span></span>删除</a>
+            <a class="detailBtn" href="javascript:void(0);"><span></span>详情</a>
+        </div>
+        <div class="mainContent">
+
+        	<!--右侧的意见栏-->
+            <div class='slideBar closeBar'>
+
+				<!--收起和展开按钮-->
+            	<div class="bar"></div>
+				<!--收起和展开按钮-->
+
+				<!--意见区域-->
+            	<div class="suggestionContent">
+            		
+                    <div class="suggesstionContainer">
+                        <p class='containerTitle'>反馈内容</p>
+                		<!--用于显示用户，时间及工具条-->
+                		<div class="suggesstionTool">
+                			<div class="tools">
+                				<a class="username" href="javascript:void(0);"></a>
+                				<a class="time" href="javascript:void(0);"></a>
+                                <a class="delBtn btnActive" style="float:right;" href="javascript:void(0);"><span></span>删除</a>
+                                <a class="detailBtn btnActive" style="float:right;" href="javascript:void(0);"><span></span>详情</a>
+    				        </div>
+                		</div>
+    					<!--用于显示用户，时间及工具条-->
+
+                		<div class="suggesstionArticle">
+                			<!--意见附件图片-->
+                			<div class="imageContainer">
+                                <div title="点击预览" class='picIcon'>附件: 图片<span class="picNum"></span>张</div>         
+                            </div>
+                			<!--意见附件图片-->
+
+                			<!--意见正文-->
+                			<div class="article">
+                			</div>
+                			<!--意见正文-->
+                		</div>
+                    </div>
+
+                    <div class="replayContainer" style="margin-top: 30px;">
+                        <p class='containerTitle'>回复内容</p>
+                        <!--用于显示用户，时间及工具条-->
+                        <div class="suggesstionTool">
+                            <div class="tools">
+                                <a class="time" href="javascript:void(0);"></a>
+                            </div>
+                        </div>
+                        <!--用于显示用户，时间及工具条-->
+
+                        <div class="suggesstionArticle">
+                            <!--意见正文-->
+                            <div class="article">
+                            </div>
+                            <!--意见正文-->
+                        </div>
+                    </div>
+
+            	</div>
+            	<!--意见区域-->
+
+            </div>
+			<!--右侧的意见栏-->
+
+            <div class="conconent">
+                <div class="listtitle">
+                </div>
+                <div class="list tableList">
+                </div>
+            </div>
+        </div>
+        <div class="pages">
+            <div class="pageBar"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery1.10.2.min.js"></script>
+    <script type="text/javascript" src="../plugins/pages/pages.js"></script>
+    <script type="text/javascript" src="js/suggestionUtil.js"></script>
+    <script type="text/javascript" src="js/replayList.js"></script>
+</body>
+</html>
